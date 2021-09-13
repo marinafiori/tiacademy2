@@ -1,0 +1,57 @@
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+main{
+width: 450PX;
+height: 450PX;
+margin: 0 auto;
+margin-top: 50px;
+display: flex;
+padding: 3px;
+flex-direction: column;
+
+} 
+.area{
+	display: flex;
+	width: 400px; 
+	height: 150px;
+	background-color: #008B8B;
+	justify-content: space-between;
+}
+.quadrado{
+width: 120PX;
+height: 120px;
+margin: 5px;
+background-color: #9932CC;
+color: #000;
+font-family: verdana,arial,cursive;
+font-weight:bold ;
+font-size: 12px;
+display: flex;
+justify-content:center;
+align-items: center;
+
+}
+
+.circ {
+	width: 120px;
+	height: 120px;
+	margin: 5px;
+	background-color: #FFA500;
+	border-radius: 100%;
+	color: #000;
+	font-family: verdana,arial,cursive;
+	font-weight:bold ;
+	font-size: 12px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+
+.deslocar{
+	justify-content: flex-end;
+	align-items: flex-end;
+}

@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Desafio ciclo 2 aula 3 </title>
+
+
+</head>
+<style type="text/css">
+    *{  margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+main{
+    margin-top: 10px;
+}
+#principal {
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    border: 1px solid black;
+    flex-direction: column;
+}
+div{
+    justify-content: space-between;
+}
+input{
+    border: 1px solid black;
+    padding: 3px;
+    margin: 1px;
+    width: 130px;
+    height: 20px;
+}
+.flex{    
+    display: flex;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.linha{
+    flex-direction: row;
+}
+#btn{
+    background-color: green;
+    color: white;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+#text01{
+    align-items: flex-end;
+}
+</style>
+
+<body>
+
+    <main class="flex center">    
+        <div id="principal" class="flex">
+            <div class="flex linha">
+                <p>Digite o valor1</p>
+                <input class="flex center" type="text" value="" id="text01">
+            </div>
+            <div class="flex linha">                
+                <p>Digite o valor2</p>           
+                <input class="flex center" type="text" value="" id="text02">
+            </div>
+            <div class="flex linha">
+                <p>Informe o Resultado</p>
+                <input class="flex center" type="text" value="" id="somaFinal">
+            </div>
+            <div>
+                <input id="btn" name="somar" class="flex" type="button" value="CONFIRMAR RESULTADO">
+            </div>
+        </div>
+</main>
+    
+</body>
+</html>

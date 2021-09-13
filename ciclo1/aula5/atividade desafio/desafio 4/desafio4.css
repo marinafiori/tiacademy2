@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#FFFACD;
+}
+
+main {
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #BDB76B;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+
+main > div > div{
+    padding: 15px;
+}
+
+main > div > div > h3{
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+h1 {
+    margin: 0 5px 0 5px;
+    font-family: 'HARLOWS', cursive;
+    font-size: 50px;
+    color: #BC8F8F;
+}
+
+main > h2 {
+    padding: 5px;
+    border-bottom: 1px solid black;
+    color: #FFFAFA;
+}
+
+p {    
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font: normal 400 14px Arial, Verdana, Serif; 
+}
+
+header, footer {
+    width: 100vw;
+    height: auto;
+    padding: 5px 0px 5px 0px;
+    background-color:#696969;
+    position: absolute;
+    z-index: 5;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    font: normal 600 14px Arial, Verdana, Serif; 
+}
+
+ 
+nav {
+    padding: 3px;
+}
+
+header > nav > ul {
+    width: 90vw;
+    height: auto;
+    list-style: none;
+    justify-content: space-between;
+}
+
+header > nav > ul > li {    
+    font: normal 600 14px Arial, Verdana, sans-serif;    
+}
+
+header > nav > ul > li > a {
+    text-decoration: none;
+    color: #FF7F50;
+}
+
+header > div {
+    width: 100vw;
+    padding: 3px;
+    margin: 0px auto;
+    justify-content: space-around;    
+    font: normal 600 20px Arial, Verdana, cursive;
+    color: black;
+}
+
+h2 {
+    font: normal 600 20px Arial, Verdana, cursive;
+}
+
+h3{
+    font: normal 600 16px Arial, Verdana, cursive;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+main > div > a:hover {
+    text-decoration: underline;
+}
+
+main > div > div {
+    width: 40vw;
+    height: auto;
+}
+
+main > div > div > a:hover {
+    text-decoration: underline;
+}
+
+main > div > div > a {
+   font: normal 400 14px Arial, Verdana, cursive;
+   padding: 5px;
+}
+
+.flex{
+	display: flex;
+}
+.center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.coluna {
+	display: flex;
+    flex-direction: column;
+}
+
+.linha {
+	display: flex;
+    flex-direction: row;
+}
+
+#direction {
+    flex-direction: row;
+}
+
+@media screen and (max-width: 700px) {
+    header > nav > ul > li {
+        display: none;
+    }    
+    header > div > h1 {
+        font-size: 30px;
+    }
+    div#direction {
+        flex-direction: column;
+    }
+    main > div > div {
+        margin: 0 auto;
+        width: 400px;
+    }
+}
